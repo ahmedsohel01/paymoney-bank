@@ -1,0 +1,10 @@
+#login-area {
+  display: none;
+}
+#transaction-area {
+  display: block;
+}
+#transaction-area h1 {
+  font-size: 45px;
+  font-weight: bold;
+}

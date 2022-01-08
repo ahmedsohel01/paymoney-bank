@@ -13,41 +13,115 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title>Welcome to PayMoney International Bank</title>
   </head>
   <body>
     <main>
-      <section class="mt-5">
+      <section class="mt-5" id="login-area">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div class="login-form bg-secondary p-5">
-                <h2 class="text-center text-white pb-3">
-                  PayMoney International Bank
-                </h2>
+            <div class="col-md-8">
+              <h2 class="text-center text-primary pb-4">
+                Welcome to <br />
+                PayMoney International Bank
+              </h2>
+              <div class="login-form bg-white shadow rounded-3 p-5">
                 <form action="#">
+                  <h2>Login</h2>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Email address</label
-                    >
                     <input
                       type="email"
                       class="form-control"
                       id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"
-                      >Password</label
-                    >
                     <input
                       type="password"
                       class="form-control"
                       id="exampleInputPassword1"
                     />
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-success" id="login-btn">
+                    Enter
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- transaction Area -->
+      <section class="mt-5" id="transaction-area">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col-md-4">
+              <div
+                class="single-box bg-primary text-white p-5 mb-2 rounded-3 shadow"
+              >
+                <h4>Deposit</h4>
+                <h1>$ <span id="deposit-amount">00</span></h1>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="single-box bg-warning text-white p-5 mb-2 rounded-3 shadow"
+              >
+                <h4>Withdraw</h4>
+                <h1>$ <span id="withdraw-amount">00</span></h1>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="single-box bg-success text-white p-5 rounded-3 shadow"
+              >
+                <h4>Balance</h4>
+                <h1>$ <span id="balance-amount">150</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single-box p-5 shadow rounded-3 mb-3">
+                <h3 class="mb-2">Deposit</h3>
+                <form action="#">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      placeholder="$ amount you want to deposit"
+                      class="form-control"
+                      id="deposit-input"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-success"
+                    type="submit"
+                    id="deposit-btn"
+                  >
+                    Deposit
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="single-box p-5 shadow rounded-3 mb-3">
+                <h3 class="mb-2">Withdraw</h3>
+                <form action="#">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      placeholder="$ amount you want to withdraw"
+                      class="form-control"
+                      id="withdraw-input"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-success"
+                    type="submit"
+                    id="withdraw-btn"
+                  >
+                    Withdraw
+                  </button>
                 </form>
               </div>
             </div>
