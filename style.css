@@ -1,8 +1,5 @@
-#login-area {
-  display: none;
-}
 #transaction-area {
-  display: block;
+  display: none;
 }
 #transaction-area h1 {
   font-size: 45px;
